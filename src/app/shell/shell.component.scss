@@ -1,17 +1,22 @@
-.example-icon {
-  padding: 0 14px;
+.mobile-title{
+  color: black;
 }
-
-.example-spacer {
-  flex: 1 1 auto;
-}
-
 .toolbar-bottom{
   background-color: transparent;
   position: fixed;
   bottom: 0;
 }
-
+.toolbar-bottom-row{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;  
+  align-items: center;
+}
 .toolbar-bottom-item {
   margin-bottom: 14px;
+  
+  color: #fff;
+}
+#first-toolbar-bottom-item{
+  width: 55px;
 }

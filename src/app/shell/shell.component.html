@@ -1,31 +1,38 @@
 <div *ngIf="(isHandset$ | async)">
 
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span class="mobile-title">fearNot</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
   
-<mat-toolbar class="toolbar-bottom">
-  <mat-toolbar-row>
-    <span class="example-spacer"></span>
+  <mat-toolbar class="toolbar-bottom">
+    <mat-toolbar-row class="toolbar-bottom-row">
+      <span class="toolbar-bottom-item" id="first-toolbar-bottom-item"></span>
+      <button class="toolbar-bottom-item" mat-fab color="primary">
+        <mat-icon>refresh</mat-icon>
+      </button>
 
-  <button class="toolbar-bottom-item" mat-fab color="accent" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-    <mat-icon>more_vert</mat-icon>
-  </button>
+      <button class="toolbar-bottom-item" mat-fab color="accent" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>  
+    </mat-toolbar-row>
+  </mat-toolbar>
 
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <mat-icon>dialpad</mat-icon>
-      <span>Redial</span>
-    </button>
-    <button mat-menu-item disabled>
-      <mat-icon>voicemail</mat-icon>
-      <span>Check voice mail</span>
-    </button>
-    <button mat-menu-item>
-      <mat-icon>notifications_off</mat-icon>
-      <span>Disable alerts</span>
-    </button>
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+          </button>
   </mat-menu>
-
-  </mat-toolbar-row>
-</mat-toolbar>
 
 </div>
 
