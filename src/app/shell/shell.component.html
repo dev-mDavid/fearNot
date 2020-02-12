@@ -13,13 +13,13 @@
         <mat-icon>refresh</mat-icon>
       </button>
 
-      <button class="toolbar-bottom-item" mat-fab color="accent" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <button class="toolbar-bottom-item" mat-fab color="accent" [matMenuTriggerFor]="menuMobile" aria-label="Example icon-button with a menu">
         <mat-icon>more_vert</mat-icon>
       </button>  
     </mat-toolbar-row>
   </mat-toolbar>
 
-  <mat-menu #menu="matMenu">
+  <mat-menu #menuMobile="matMenu">
           <button mat-menu-item>
             <mat-icon>dialpad</mat-icon>
             <span>Redial</span>
@@ -37,6 +37,31 @@
 </div>
 
 <div *ngIf="!(isHandset$ | async)">
-  
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>fearNot</span>
+      <span class="example-spacer"></span>
+      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+            
+      <mat-icon class="example-icon" [matMenuTriggerFor]="menuNotMobile">more_vert</mat-icon>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-menu #menuNotMobile="matMenu">
+    <button mat-menu-item>
+      <mat-icon>dialpad</mat-icon>
+      <span>About</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>voicemail</mat-icon>
+      <span>Credits</span>
+    </button>    
+    <button mat-menu-item>
+      <mat-icon>whatshot</mat-icon>
+      <span>Back to the Exercise</span>
+    </button>    
+  </mat-menu>
+
+
 </div>
 

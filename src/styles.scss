@@ -12,9 +12,77 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$fearNot-primary: mat-palette($mat-deep-orange);
-$fearNot-accent: mat-palette($mat-indigo, A200, A100, A400);
 
+$custom-orange: (
+    50 : #fce9e3,
+    100 : #f8c9ba,
+    200 : #f3a58c,
+    300 : #ee805e,
+    400 : #ea653c,
+    500 : #e64a19,
+    600 : #e34316,
+    700 : #df3a12,
+    800 : #db320e,
+    900 : #d52208,
+    A100 : #fffefe,
+    A200 : #ffd0cb,
+    A400 : #ffa298,
+    A700 : #ff8b7f,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+$custom-blue: (
+    50 : #e3edf7,
+    100 : #b9d1ec,
+    200 : #8ab2e0,
+    300 : #5b93d3,
+    400 : #387cc9,
+    500 : #1565c0,
+    600 : #125dba,
+    700 : #0f53b2,
+    800 : #0c49aa,
+    900 : #06379c,
+    A100 : #c8d7ff,
+    A200 : #95b2ff,
+    A400 : #628dff,
+    A700 : #487aff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+
+
+$fearNot-primary: mat-palette($custom-orange);
+// $fearNot-accent: mat-palette($custom-blue, A200, A100, A400);
+$fearNot-accent: mat-palette($custom-blue);
 // The warn palette is optional (defaults to red).
 $fearNot-warn: mat-palette($mat-red);
 
