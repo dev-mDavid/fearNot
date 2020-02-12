@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShareModule } from './share/share.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FearnotExerciseComponent } from './fearnot-exercise/fearnot-exercise.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FearnotExerciseComponent
   ],
   imports: [
     BrowserModule,
