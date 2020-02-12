@@ -12,14 +12,14 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$fearNot-primary: mat-palette($mat-indigo);
-$fearNot-accent: mat-palette($mat-pink, A200, A100, A400);
+$fearNot-primary: mat-palette($mat-deep-orange);
+$fearNot-accent: mat-palette($mat-indigo, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $fearNot-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$fearNot-theme: mat-light-theme($fearNot-primary, $fearNot-accent, $fearNot-warn);
+$fearNot-theme: mat-dark-theme($fearNot-primary, $fearNot-accent, $fearNot-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
