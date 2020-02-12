@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "fearNot": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fearNot"
+    }
+  },
+  "defaultProject": "fearNot",
+  "cli": {
+    "analytics": "7f9f08e6-7844-4ebb-bb03-b906b4d14b52"
+  }
 }
