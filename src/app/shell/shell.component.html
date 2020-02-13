@@ -2,7 +2,7 @@
 
   <div *ngIf="(isHandset$ | async)">
 
-    <mat-toolbar color="primary">
+    <mat-toolbar class="mobile-toolbar-top">
       <mat-toolbar-row>
         <span class="mobile-title">fearNot</span>
       </mat-toolbar-row>
@@ -34,8 +34,7 @@
               <mat-icon>notifications_off</mat-icon>
               <span>Disable alerts</span>
             </button>
-    </mat-menu>
-    
+    </mat-menu>  
   </div>
 
   <div *ngIf="!(isHandset$ | async)">
@@ -62,8 +61,8 @@
         <mat-icon>whatshot</mat-icon>
         <span>Back to the Exercise</span>
       </button>    
-    </mat-menu>
+    </mat-menu>    
   </div>
-
-  <ng-content></ng-content>
+    <ng-content></ng-content>
+  
 </div>

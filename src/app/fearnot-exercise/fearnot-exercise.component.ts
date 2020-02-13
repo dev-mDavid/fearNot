@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-fearnot-exercise',
   templateUrl: './fearnot-exercise.component.html',
   styleUrls: ['./fearnot-exercise.component.scss']
 })
-export class FearnotExerciseComponent implements OnInit {
+export class FearnotExerciseComponent{
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
