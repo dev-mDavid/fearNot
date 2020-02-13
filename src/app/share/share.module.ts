@@ -16,8 +16,12 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatGridListModule } from "@angular/material/grid-list";
 
 import { ShellComponent } from '../shell/shell.component';
+import { MmtSpacerComponent } from '../mmt-spacer/mmt-spacer.component';
 
-const components = [ShellComponent];
+const components = [
+  ShellComponent,
+  MmtSpacerComponent
+];
 
 const modules = [
   CommonModule,
