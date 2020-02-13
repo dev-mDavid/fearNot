@@ -17,10 +17,12 @@ import { MatGridListModule } from "@angular/material/grid-list";
 
 import { ShellComponent } from '../shell/shell.component';
 import { MmtSpacerComponent } from '../mmt-spacer/mmt-spacer.component';
+import { MmtQuestionTextareaComponent } from '../mmt-question-textarea/mmt-question-textarea.component';
 
 const components = [
   ShellComponent,
-  MmtSpacerComponent
+  MmtSpacerComponent,
+  MmtQuestionTextareaComponent
 ];
 
 const modules = [
