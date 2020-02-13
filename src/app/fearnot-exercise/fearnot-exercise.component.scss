@@ -24,12 +24,16 @@ b {
 mat-form-field {
   width: 90%;
   // margin-top: -25px;
-  font-family: $read-font-family;
-  margin-left: 30px;
+  font-family: $read-font-family;  
 
   input {
 
   }
+}
+
+mmt-question-textarea {  
+  display: block;
+  margin-left: 30px;  
 }
 
 
