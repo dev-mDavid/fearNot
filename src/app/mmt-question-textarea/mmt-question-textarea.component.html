@@ -1,11 +1,16 @@
 <p><b>{{ title }} — </b>{{ question }}
-  <mat-hint>{{ hint }}</mat-hint>
-  <mat-form-field appearance="standard">
+  <br><mat-hint>{{ hint }}</mat-hint>
+  <mat-form-field 
+    appearance="standard" 
+    color="accent" 
+  >
     <textarea 
-      matInput 
+      matInput      
       cdkTextareaAutosize 
       cdkAutosizeMinRows="1" 
       cdkAutosizeMaxRows="5"
-      placeholder= "{{ placeholder }}"></textarea>
+      placeholder= "{{ placeholder }}"
+      spellcheck="false"
+    ></textarea>
   </mat-form-field>
 </p>
