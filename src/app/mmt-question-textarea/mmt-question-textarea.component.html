@@ -1,10 +1,11 @@
-<p><b>{{ renderTitle }}— </b>what are you hesistant to do or putting off?
+<p><b>{{ title }} — </b>{{ question }}
+  <mat-hint>{{ hint }}</mat-hint>
   <mat-form-field appearance="standard">
     <textarea 
       matInput 
       cdkTextareaAutosize 
       cdkAutosizeMinRows="1" 
       cdkAutosizeMaxRows="5"
-      placeholder="Type Answer Here"></textarea>
+      placeholder= "{{ placeholder }}"></textarea>
   </mat-form-field>
 </p>

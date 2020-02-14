@@ -7,7 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class MmtQuestionTextareaComponent implements OnInit {
-  @Input() renderTitle: string;
+  @Input() title: string;
+  @Input() question: string;
+  @Input() placeholder: string;
+  @Input() hint: string;
   
   constructor() { }
 
